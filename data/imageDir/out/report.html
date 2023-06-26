@@ -1,0 +1,58 @@
+
+    <!doctype html>
+      
+<head>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.js"></script>
+</head>
+
+      <body>
+        <table>
+          <tbody>
+            <tr>
+              <th>Name</th>
+              <th>resized</th>
+<th>grey</th>
+<th>gaussian</th>
+<th>blackhat</th>
+<th>scharr</th>
+<th>close</th>
+<th>mask</th>
+<th>close2</th>
+<th>erode</th>
+<th>painted</th>
+            </tr>
+            
+    <tr>
+      <td>cccd.jpg</td>
+      <td><img style="max-width: 500px;" src="resized/cccd.png"</td>
+<td><img style="max-width: 500px;" src="grey/cccd.png"</td>
+<td><img style="max-width: 500px;" src="gaussian/cccd.png"</td>
+<td><img style="max-width: 500px;" src="blackhat/cccd.png"</td>
+<td><img style="max-width: 500px;" src="scharr/cccd.png"</td>
+<td><img style="max-width: 500px;" src="close/cccd.png"</td>
+<td><img style="max-width: 500px;" src="mask/cccd.png"</td>
+<td><img style="max-width: 500px;" src="close2/cccd.png"</td>
+<td><img style="max-width: 500px;" src="erode/cccd.png"</td>
+<td><img style="max-width: 500px;" src="painted/cccd.png"</td>
+      <td></td>
+    </tr>
+  
+          </tbody>
+        </table>
+        
+<script type="text/javascript">
+$(function() {
+    /** This code runs when everything has been loaded on the page */
+    /* Inline sparklines take their values from the contents of the tag */
+    $('.histogram').sparkline('html', {
+        type: 'line',
+        width: 400,
+        height: 100
+    }); 
+});
+</script>
+
+      </body>
+    </html>
+  
